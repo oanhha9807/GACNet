@@ -1,10 +1,8 @@
 # GACNet: A Graph Attention-Based Neural Network for EEG Localization via Contrastive Learning
-GACNet: A Graph Attention-Based Neural Network for EEG Localization via Contrastive Learning
-# BiLSTM-GCN Encoder with SupCon for EEG Regression
 
-## Overview
+## Abstract
 
-This project proposes a novel deep learning architecture for EEG signal regression, combining spatial and temporal encoding with contrastive learning. The model aims to predict continuous values (e.g., gaze coordinates, emotional arousal, etc.) from multichannel EEG signals.
+EEG-based eye tracking method has faced to many challenges due to the inherently noisy, high-dimensional, and non-stationary nature of brain data. In this work, we propose a novel regression framework, termed GACNet, that effectively integrates spatial-temporal EEG representation, and supervising contrastive learning to enhance regression performance. For encoder representation, a temporal module that employs a 1D convolution layer, channel-wise attention, and a Bi-LSTM network to capture local and long-range temporal dependencies. A spatial module built upon Graph Attention Networks (GATs) or Graph Convolutional Networks (GCNs) to model inter-channel spatial relationships. To further improve representation quality, we utilize a clustering-guided supervised contrastive (SupCon) loss, which explicitly enforces compactness within positive clusters while separating them from negatives in the learned feature space. Joint optimization with regression loss enables the model to learn both discriminative and task relevant representations. Experimental results demonstrate that our proposed method achieves an RMSE of 17.21 mm, significantly outperforming the previous best method at 24.37 mm. This result confirm the effectiveness of integrating spatial-temporal encoding with contrastive learning for robust EEG regression.
 
 ## Motivation
 
