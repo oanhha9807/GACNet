@@ -51,6 +51,7 @@ torch-geometric >= 2.0
 numpy
 scikit-learn
 matplotlib
+
 ```bash
 
 🚀 How to Run
