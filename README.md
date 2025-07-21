@@ -54,9 +54,9 @@ matplotlib
 
 
 
-🚀 How to Run
+## 🚀 How to Run
 
-1. Pretraining with SupCon Loss
+## 1. Pretraining with SupCon Loss
 ```bash
 
 python train_supcon.py \
@@ -65,7 +65,7 @@ python train_supcon.py \
     --temperature 0.07 \
     --epochs 100
 
-2. Fine-tuning for Regression
+## 2. Fine-tuning for Regression
 ```bash
 python train_regression.py \
     --data_path ./data/eeg_dataset.pt \
