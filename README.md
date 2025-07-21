@@ -59,11 +59,7 @@ matplotlib
 ## 1. Pretraining with SupCon Loss
 ```bash
 
-python train_supcon.py \
-    --data_path ./data/eeg_dataset.pt \
-    --output ./checkpoints/encoder.pt \
-    --temperature 0.07 \
-    --epochs 100
+<pre> ```python python train_supcon.py \ --data_path ./data/eeg_dataset.pt \ --output ./checkpoints/encoder.pt \ --temperature 0.07 \ --epochs 100 ``` </pre>
 
 ## 2. Fine-tuning for Regression
 ```bash
