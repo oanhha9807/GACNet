@@ -11,11 +11,12 @@ This project proposes a novel deep learning architecture for EEG signal regressi
 EEG signals are inherently spatiotemporal, with both channel-wise dependencies and temporal dynamics. Existing models often focus on either spatial or temporal aspects, leading to sub-optimal representations. Furthermore, many regression models lack robust pretraining mechanisms.
 
 ## Our Proposal
-
+![Model Overview](images/Framework1.png)
 We propose a hybrid encoder that integrates:
 - **BiLSTM**: for capturing temporal dynamics across time points in EEG sequences.
 - **GCN**: for modeling spatial relationships between EEG channels using a predefined electrode graph.
 - **SupCon Loss**: a supervised contrastive learning objective that encourages the model to learn more discriminative and robust representations during the pretraining stage.
+- 
 
 ### Architecture
 
@@ -73,4 +74,8 @@ python train_regression.py \
     --loss mse \
     --epochs 50
 </pre>
+
+## 🚀 Visualize Results
+![Visualize ](images/Ablation.png)
+
 
