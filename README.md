@@ -44,7 +44,14 @@ We propose a hybrid encoder that integrates:
 
   
 ## ⚙️ Requirements
-<pre> ``` python >= 3.8 torch >= 1.12 torch-geometric >= 2.0 numpy scikit-learn matplotlib ``` </pre>
+<pre> ``` 
+  python >= 3.8 
+  torch >= 1.12 
+  torch-geometric >= 2.0 
+  numpy 
+  scikit-learn 
+  matplotlib 
+  ``` </pre>
 
 
 
@@ -53,7 +60,8 @@ We propose a hybrid encoder that integrates:
 ## 1. Pretraining with SupCon Loss
 ```bash
 
-<pre> ```python python train_supcon.py \ --data_path ./data/eeg_dataset.pt \ --output ./checkpoints/encoder.pt \ --temperature 0.07 \ --epochs 100 ``` </pre>
+<pre>
+```python python train_supcon.py \ --data_path ./data/eeg_dataset.pt \ --output ./checkpoints/encoder.pt \ --temperature 0.07 \ --epochs 100 ``` </pre>
 
 ## 2. Fine-tuning for Regression
 ```bash
