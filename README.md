@@ -52,7 +52,7 @@ numpy
 scikit-learn
 matplotlib
 
-```bash
+
 
 🚀 How to Run
 
@@ -64,7 +64,7 @@ python train_supcon.py \
     --output ./checkpoints/encoder.pt \
     --temperature 0.07 \
     --epochs 100
-```bash
+
 2. Fine-tuning for Regression
 ```bash
 python train_regression.py \
@@ -73,5 +73,5 @@ python train_regression.py \
     --output ./checkpoints/regressor.pt \
     --loss mse \
     --epochs 50
-```bash
+
 
