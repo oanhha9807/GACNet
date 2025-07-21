@@ -52,3 +52,25 @@ numpy
 scikit-learn
 matplotlib
 ```bash
+
+🚀 How to Run
+
+1. Pretraining with SupCon Loss
+```bash
+
+python train_supcon.py \
+    --data_path ./data/eeg_dataset.pt \
+    --output ./checkpoints/encoder.pt \
+    --temperature 0.07 \
+    --epochs 100
+```bash
+2. Fine-tuning for Regression
+```bash
+python train_regression.py \
+    --data_path ./data/eeg_dataset.pt \
+    --pretrained ./checkpoints/encoder.pt \
+    --output ./checkpoints/regressor.pt \
+    --loss mse \
+    --epochs 50
+```bash
+
