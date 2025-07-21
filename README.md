@@ -44,10 +44,11 @@ We propose a hybrid encoder that integrates:
   ```python
   
 ## ⚙️ Requirements
-`bash
+```bash
 python >= 3.8
 torch >= 1.12
 torch-geometric >= 2.0
 numpy
 scikit-learn
 matplotlib
+```bash
