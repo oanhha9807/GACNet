@@ -41,7 +41,8 @@ We propose a hybrid encoder that integrates:
   X.shape = (1000, 129, 500)
   Y.shape = (1000, 2)         # coordinates
   Y_cls.shape = (1000,)       # cluster/class labels for SupCon
-
+  ```python
+  
 ## ⚙️ Requirements
 `bash
 python >= 3.8
