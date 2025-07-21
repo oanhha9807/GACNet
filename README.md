@@ -44,14 +44,14 @@ We propose a hybrid encoder that integrates:
 
   
 ## ⚙️ Requirements
-<pre> ``` 
+<pre> 
   python >= 3.8 
   torch >= 1.12 
   torch-geometric >= 2.0 
   numpy 
   scikit-learn 
   matplotlib 
-  ``` </pre>
+   </pre>
 
 
 
