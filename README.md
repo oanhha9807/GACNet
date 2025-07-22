@@ -44,6 +44,7 @@ We propose a hybrid encoder that integrates:
   
 ## ⚙️ Requirements
 <pre> 
+  pip3 install -r requirements.txt
   python >= 3.8 
   torch >= 1.12 
   torch-geometric >= 2.0 
