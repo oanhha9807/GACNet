@@ -60,7 +60,7 @@ We propose a hybrid encoder that integrates:
 ## 1. Tranining
 
 <pre>
-python python train_supcon.py  --data_path ./data/eeg_dataset.pt  --output ./checkpoints/encoder.pt  --temperature 0.07 --epochs 100
+python python main.py  --data_path ./data/eeg_dataset.pt  --output ./checkpoints/encoder.pt  --temperature 0.07 --epochs 100
 </pre>
 
 
