@@ -57,22 +57,12 @@ We propose a hybrid encoder that integrates:
 
 ## 🚀 How to Run
 
-## 1. Pretraining with SupCon Loss
-
+## 1. Tranining
 
 <pre>
 python python train_supcon.py  --data_path ./data/eeg_dataset.pt  --output ./checkpoints/encoder.pt  --temperature 0.07 --epochs 100
 </pre>
 
-## 2. Fine-tuning for Regression
-<pre>
-python train_regression.py \
-    --data_path ./data/eeg_dataset.pt \
-    --pretrained ./checkpoints/encoder.pt \
-    --output ./checkpoints/regressor.pt \
-    --loss mse \
-    --epochs 50
-</pre>
 
 ## 🚀 Visualize Results
 ![Visualize ](images/Ablation.png)
